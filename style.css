@@ -97,7 +97,13 @@ header {
     color: var(--primary);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
+}
+
+.logo-img {
+    height: 45px;
+    width: auto;
+    border-radius: 50%;
 }
 
 .logo span {
