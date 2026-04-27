@@ -1,27 +1,21 @@
 # Samambaia Limpeza 🌿
 
-Landing Page de alta conversão para a **Samambaia Limpeza**, empresa especializada em higienização profissional de estofados, colchões e sofás.
+Especialistas em **Limpeza e Higienização Profissional** de estofados, colchões e sofás. Levamos saúde, bem-estar e conforto para o seu lar ou veículo.
 
-## 🚀 Tecnologias Utilizadas
-- **HTML5**: Estrutura semântica e SEO.
-- **CSS3**: Design premium, responsivo e animações modernas.
-- **JavaScript**: Interatividade (FAQ, Scroll Reveal e navegação suave).
-- **Google Fonts**: Tipografia moderna (Outfit).
-- **Font Awesome**: Ícones intuitivos.
+## 🧽 Nossos Serviços
+- **Higienização de Sofás**: Remoção profunda de manchas, odores e microorganismos.
+- **Limpeza de Colchões**: Eliminação de 99% de ácaros, fungos e bactérias para noites de sono mais saudáveis.
+- **Estofados Automotivos**: Limpeza completa do interior do seu veículo com acabamento profissional.
 
-## ✨ Funcionalidades
-- **Design Responsivo**: Adaptado para celulares, tablets e computadores.
-- **Integração com WhatsApp**: Botões de CTA estratégicos e botão flutuante.
-- **Otimização SEO**: Meta tags configuradas para Google e compartilhamento em redes sociais.
-- **Alta Performance**: Uso de `IntersectionObserver` para animações leves e `Lazy Loading` para imagens.
-- **Seção de Prova Social**: Comparativos de antes e depois.
+## ⭐ Por que escolher a Samambaia?
+- **Equipamentos de Ponta**: Utilizamos extratoras de alta sucção que removem a sujeira nas camadas mais profundas.
+- **Produtos Seguros**: Utilizamos produtos biodegradáveis e com pH neutro, seguros para crianças e pets.
+- **Atendimento em Domicílio**: Praticidade e conforto para você.
 
-## 📞 Contato
+## 📞 Solicite um Orçamento
+Estamos prontos para atender você e transformar o seu ambiente.
 - **WhatsApp**: (11) 96500-2951
 - **Instagram**: [@samambaia.limpeza](https://www.instagram.com/samambaia.limpeza/)
 
-## 📄 Licença
-Este projeto é para uso exclusivo da Samambaia Limpeza.
-
 ---
-Desenvolvido com foco em conversão e experiência do usuário.
+*Samambaia Limpeza - Sua casa renovada e sua família protegida.*
