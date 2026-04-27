@@ -108,7 +108,7 @@ header {
 .hero {
     height: 100vh;
     min-height: 600px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('hero_sofa_clean.png'); /* Placeholder */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('hero_sofa_clean_1777306278893.png');
     background-size: cover;
     background-position: center;
     display: flex;

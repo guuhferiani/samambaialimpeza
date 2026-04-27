@@ -46,25 +46,22 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Add animation on scroll (simple reveal)
-const revealElements = document.querySelectorAll('.diff-card, .service-card, .proof-item');
-const revealOnScroll = () => {
-    revealElements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight - 100;
-        if (isVisible) {
-            el.style.opacity = '1';
-            el.style.transform = 'translateY(0)';
+// Optimized Scroll Reveal using IntersectionObserver
+const revealOnScroll = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            revealOnScroll.unobserve(entry.target); // Stop observing once revealed
         }
     });
-};
+}, {
+    threshold: 0.15
+});
 
-// Initial state for reveal
-revealElements.forEach(el => {
+document.querySelectorAll('.diff-card, .service-card, .proof-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'all 0.6s ease-out';
+    revealOnScroll.observe(el);
 });
-
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll(); // Trigger once on load
