@@ -357,12 +357,20 @@ footer {
 
 .social-links {
     display: flex;
+    flex-direction: column;
     gap: 15px;
 }
 
 .social-links a {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     transition: var(--transition);
+}
+
+.social-links a i {
+    font-size: 1.5rem;
 }
 
 .social-links a:hover {
