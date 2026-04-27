@@ -29,21 +29,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Header scroll effect
+let lastScrollY = window.scrollY;
+
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
-    if (window.scrollY > 50) {
-        header.style.background = 'rgba(255, 255, 255, 0.95)';
-        header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-        header.style.padding = '0.8rem 0';
-        document.querySelector('.logo').style.color = '#2D5A27';
+    const currentScrollY = window.scrollY;
+
+    // Background toggle
+    if (currentScrollY > 50) {
+        header.classList.add('scrolled');
     } else {
-        header.style.background = 'transparent';
-        header.style.boxShadow = 'none';
-        header.style.padding = '1.5rem 0';
-        // Only change logo color if it's over the hero (white text)
-        // For this design, hero is dark, so logo should be white initially if needed
-        // But the current logo is green in CSS. Let's adjust for hero visibility.
+        header.classList.remove('scrolled');
     }
+
+    // Hide/Show logic
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down
+        header.classList.add('header-hidden');
+    } else {
+        // Scrolling up
+        header.classList.remove('header-hidden');
+    }
+
+    lastScrollY = currentScrollY;
 });
 
 // Optimized Scroll Reveal using IntersectionObserver
