@@ -146,10 +146,8 @@ header.header-hidden {
     .hero-content h1 {
         font-size: 2.8rem;
     }
-    .hero {
+    .hero, .hero-content {
         text-align: left;
-    }
-    .hero-content {
         align-items: flex-start;
     }
     .hero-list ul {
@@ -181,6 +179,10 @@ header.scrolled .logo {
 
 .hero-content {
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .hero h1 {
