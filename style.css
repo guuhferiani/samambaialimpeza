@@ -596,11 +596,43 @@ footer {
 }
 
 .footer-bottom {
-    text-align: center;
-    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 25px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
-    opacity: 0.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-developer {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-developer a {
+    color: var(--white);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    transition: var(--transition);
+}
+
+.footer-developer a:hover {
+    color: var(--primary-light);
+    transform: translateY(-1px);
+}
+
+.footer-developer a i {
+    font-size: 1.15rem;
 }
 
 /* Floats Container */
@@ -713,6 +745,12 @@ footer {
         font-size: 24px;
         bottom: 20px;
         right: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
 }
 
